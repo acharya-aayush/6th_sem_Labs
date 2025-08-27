@@ -1,0 +1,21 @@
+@model List<Lab3.Models.Department>
+
+<h2>Department List</h2>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse;">
+    <tr style="background-color: #f2f2f2;">
+        <th>Department ID</th>
+        <th>Department Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var dept in Model)
+    {
+        <tr>
+            <td>@dept.Id</td>
+            <td>@dept.Name</td>
+            <td><a href="/Department/Details/@dept.Id">View Details</a></td>
+        </tr>
+    }
+</table>
+
+<br />
+<a href="/Employee/Index">View Employees</a>

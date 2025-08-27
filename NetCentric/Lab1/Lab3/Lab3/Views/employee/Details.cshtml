@@ -1,0 +1,12 @@
+﻿@model Lab3.Models.employee
+
+<h2>Employee Details</h2>
+<div style="border: 1px solid #ccc; padding: 20px; margin: 20px 0;">
+    <p><strong>Employee ID:</strong> @Model.Id</p>
+    <p><strong>Employee Name:</strong> @Model.Name</p>
+    <p><strong>Department ID:</strong> @Model.departmentID</p>
+    <p><strong>Department Name:</strong> @ViewBag.DepartmentName</p>
+</div>
+
+<a href="/Employee/Index">Back to Employee List</a> | 
+<a href="/Department/Index">View Departments</a>
