@@ -8,6 +8,9 @@ namespace Lab4.Controllers
         static List<Employee> employees = new()
         {
             new() { Id = 1, Name = "Aayush Acharya", Email = "aayush@gmail.com", Position = "Developer", Age = 20, Salary = 65000 },
+            new() { Id = 2, Name = "Aarjanmani Kandel", Email = "aarjan@gmail.com", Position = "Manager", Age = 22, Salary = 75000 },
+            new() { Id = 3, Name = "Swornimraj Dangol", Email = "sworn@gmail.com", Position = "Analyst", Age = 21, Salary = 60000 },
+            new() { Id = 4, Name = "Nilima Shrestha", Email = "nilima@gmail.com", Position = "HR", Age = 22, Salary = 70000 },
             new() { Id = 5, Name = "Shiksha Karki", Email = "shiksha@gmail.com", Position = "Marketing", Age = 20, Salary = 55000 }
         };
         static int nextId = 6;
