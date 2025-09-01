@@ -1,0 +1,11 @@
+using Lab5.Services;
+var b = WebApplication.CreateBuilder(args);
+b.Services.AddControllersWithViews();
+b.Services.AddSingleton<IDepartmentRepository, DepartmentRepository>();
+b.Services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+var app = b.Build();
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+app.Run();

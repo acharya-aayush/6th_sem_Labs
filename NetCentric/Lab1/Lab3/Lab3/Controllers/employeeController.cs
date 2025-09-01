@@ -11,10 +11,10 @@ namespace Lab3.Controllers
         // Simulating employee data
         private static List<employee> employees = new List<employee>
         {
-            new employee { Id = 1, Name = "Aayush Acharya", departmentID = 101 },
-            new employee { Id = 2, Name = "Nilima Shrestha", departmentID = 102 },
+            new employee { Id = 1, Name = "Nirajan Kumar Yadav", departmentID = 101 },
+            new employee { Id = 2, Name = "Nilisha Shakya", departmentID = 102 },
             new employee { Id = 3, Name = "Nischal Gyawali", departmentID = 101 },
-            new employee { Id = 4, Name = "Swornim Raj Dangol", departmentID = 103 }
+            new employee { Id = 4, Name = "Sumit Kumar Shah", departmentID = 103 }
         };
 
         // Simulating department data (same as in DepartmentController)

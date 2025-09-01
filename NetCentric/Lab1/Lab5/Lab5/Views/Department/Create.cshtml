@@ -1,0 +1,10 @@
+@model Lab5.Models.Department
+
+<h2>Add Department</h2>
+<form asp-action="Create" method="post">
+    Name: <input asp-for="Name" /><br>
+    Description: <input asp-for="Description" /><br>
+    Manager: <input asp-for="Manager" /><br>
+    <button type="submit">Save</button>
+    <a asp-action="Index">Cancel</a>
+</form>

@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>@ViewData["Title"] - Lab5</title></head>
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a> |
+        <a asp-controller="Department" asp-action="Index">Departments</a> |
+        <a asp-controller="Employee" asp-action="Index">Employees</a>
+    </nav>
+    @RenderBody()
+</body>
+</html>

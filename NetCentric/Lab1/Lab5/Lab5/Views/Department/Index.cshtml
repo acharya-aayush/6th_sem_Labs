@@ -1,0 +1,15 @@
+@model IEnumerable<Lab5.Models.Department>
+<h2>Departments</h2>
+<a asp-action="Create">Add New</a>
+<table border="1">
+    <tr><th>Name</th><th>Description</th><th>Manager</th><th>Actions</th></tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Name</td>
+            <td>@d.Description</td>
+            <td>@d.Manager</td>
+            <td><a asp-action="Edit" asp-route-id="@d.Id">Edit</a> | <a asp-action="Delete" asp-route-id="@d.Id">Delete</a></td>
+        </tr>
+    }
+</table>
