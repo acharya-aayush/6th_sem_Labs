@@ -36,8 +36,8 @@ namespace Lab4.Models
 ### 2. Controller
 **File Path:** `Lab4/Controllers/EmployeeController.cs`
 
-#####using Lab4.Models;
-#####using Microsoft.AspNetCore.Mvc;
+####using Lab4.Models;
+###using Microsoft.AspNetCore.Mvc;
 
 namespace Lab4.Controllers
 {
