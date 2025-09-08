@@ -31,6 +31,8 @@ namespace Lab4.Models
         public decimal Salary { get; set; }
     }
 }
+---
+
 ### 2. Controller
 **File Path:** `Lab4/Controllers/EmployeeController.cs`
 using Lab4.Models;
@@ -95,6 +97,8 @@ namespace Lab4.Controllers
         }
     }
 }
+---
+
 ### 3. Views
 
 #### 3a. Index View
@@ -218,9 +222,11 @@ namespace Lab4.Controllers
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+---
+
 ## Writing Order:
 1. Employee.cs (Model with validation)
-2. EmployeeController.cs (CRUD operations)
+2. EmployeeController.cs (CRUD operations)  
 3. Index.cshtml (List view)
 4. Create.cshtml (Add form)
 5. Edit.cshtml (Edit form)
