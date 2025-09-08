@@ -2,8 +2,9 @@
 
 ## Files to Write in Order
 
-### 1. **Model**
-**File Path:** `Lab4/Models/Employee.cs`using System.ComponentModel.DataAnnotations;
+### 1. Model
+**File Path:** `Lab4/Models/Employee.cs`
+using System.ComponentModel.DataAnnotations;
 
 namespace Lab4.Models
 {
@@ -30,8 +31,9 @@ namespace Lab4.Models
         public decimal Salary { get; set; }
     }
 }
-### 2. **Controller**
-**File Path:** `Lab4/Controllers/EmployeeController.cs`using Lab4.Models;
+### 2. Controller
+**File Path:** `Lab4/Controllers/EmployeeController.cs`
+using Lab4.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab4.Controllers
@@ -93,10 +95,11 @@ namespace Lab4.Controllers
         }
     }
 }
-### 3. **Views**
+### 3. Views
 
-#### 3a. **Index View**
-**File Path:** `Lab4/Views/Employee/Index.cshtml`@model List<Lab4.Models.Employee>
+#### 3a. Index View
+**File Path:** `Lab4/Views/Employee/Index.cshtml`
+@model List<Lab4.Models.Employee>
 
 <h2>Employees</h2>
 <a href="/Employee/Create" class="btn btn-primary">Add</a>
@@ -132,8 +135,9 @@ namespace Lab4.Controllers
         }
     </tbody>
 </table>
-#### 3b. **Create View**
-**File Path:** `Lab4/Views/Employee/Create.cshtml`@model Lab4.Models.Employee
+#### 3b. Create View
+**File Path:** `Lab4/Views/Employee/Create.cshtml`
+@model Lab4.Models.Employee
 
 <h2>Add Employee</h2>
 
@@ -172,8 +176,9 @@ namespace Lab4.Controllers
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-#### 3c. **Edit View**
-**File Path:** `Lab4/Views/Employee/Edit.cshtml`@model Lab4.Models.Employee
+#### 3c. Edit View
+**File Path:** `Lab4/Views/Employee/Edit.cshtml`
+@model Lab4.Models.Employee
 
 <h2>Edit Employee</h2>
 
