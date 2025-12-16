@@ -1,2 +1,5 @@
-# 6th_sem_Labs
-so just hamro 6th sem ko labs haru
+
+6th Semester Labs
+=================
+
+This repository contains lab assignments and projects for the 6th semester.

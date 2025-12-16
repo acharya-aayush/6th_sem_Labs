@@ -1,0 +1,24 @@
+@model List<Lab6.Models.Department>
+
+<h2>Departments</h2>
+
+<a asp-action="Create" class="btn btn-primary">Add Department</a>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var dept in Model)
+    {
+        <tr>
+            <td>@dept.Id</td>
+            <td>@dept.Name</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@dept.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@dept.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

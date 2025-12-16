@@ -1,0 +1,28 @@
+@model List<Lab6.Models.Employee>
+
+<h2>Employees</h2>
+
+<a asp-action="Create" class="btn btn-primary">Add Employee</a>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Dept ID</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.Id</td>
+            <td>@emp.Name</td>
+            <td>@emp.Email</td>
+            <td>@emp.DeptId</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@emp.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@emp.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
