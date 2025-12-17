@@ -48,10 +48,18 @@ print("Accepted" if even_zeros_even_ones(s) else "Rejected")
 
 ---
 
+
 ### 2. Program to test whether a given identifier is valid or not
 
-**Rules:**
+**Algorithm:**
+1. If the string is empty, reject.
+2. If the first character is a letter or underscore, continue; else, reject.
+3. For each remaining character:
+    * If it is a letter, digit, or underscore, continue.
+    * Else, reject.
+4. If all checks pass, accept.
 
+**Rules:**
 * Must start with letter or underscore
 * Can contain letters, digits, underscore
 * No spaces or symbols
@@ -111,7 +119,14 @@ print("Accepted" if odd_zeros_odd_ones(s) else "Rejected")
 
 ---
 
+
 ### 2. Program to simulate lexical analyzer for validating operators
+
+**Algorithm:**
+1. Define a set of valid operators: `+ - * / % = == < > <= >= !=`.
+2. Read the input token.
+3. If the token is in the set, accept.
+4. Else, reject.
 
 **Operators considered:** `+ - * / % = == < > <= >= !=`
 
@@ -214,7 +229,16 @@ print("Accepted" if start_end_same(s) else "Rejected")
 
 ---
 
+
 ### 2. Program to test whether a given identifier is valid or not (again)
+
+**Algorithm:**
+1. If the string is empty, reject.
+2. If the first character is a letter or underscore, continue; else, reject.
+3. For each remaining character:
+    * If it is a letter, digit, or underscore, continue.
+    * Else, reject.
+4. If all checks pass, accept.
 
 **Python Code:**
 
